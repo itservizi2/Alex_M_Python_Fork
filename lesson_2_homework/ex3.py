@@ -7,3 +7,10 @@
 # Emailul pentru Marius a fost expediat cu succes pe adresa de email mariustricolici@hotmail.com
 #
 # Pentru adresa de email: mariustricolici@hotmail.com Si numele de utilizator: Marius
+
+email = input("Introduceti email: ")
+nume = input("Introduceti nume : ")
+print('Emailul pentru ' + nume + ' a fost expediat cu succes pe adresa ' + email)
+print('Emailul pentru {} a fost expediat cu succes pe adresa {} '.format(nume, email))
+
+
