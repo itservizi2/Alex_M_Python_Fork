@@ -11,3 +11,21 @@ Folosiți funcţia int() pentru a transforma valorile citite în numere întregi
 Afișați toate rezultatele
 
 """
+x = int(float(input("insert x: ")))
+y = int(float(input("insert y: ")))
+
+suma = x + y
+print(f"suma = {suma}")
+
+diff = x - y
+print(f"diff = {diff}")
+
+rest_impart = x % y
+print(f"rest_impart = {rest_impart}")
+
+mult = x * y
+print(f"mult = {mult}")
+
+power = x ** 3
+print(f"power = {power}")
+

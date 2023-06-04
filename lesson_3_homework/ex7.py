@@ -6,3 +6,7 @@ Scrieți un program care
 
  Numarul de caractere trebuie sa fie considerat indiferent daca e majuscula sau minuscula
 """
+sir = input("introduceti sirul de caractere : ")
+caracter_cautat = input("introduceti caracterul cautat : ")
+numar = sir.lower().count(caracter_cautat.lower())
+print(f"caracterul {caracter_cautat} apare in sir de {numar} ori ")

@@ -6,3 +6,12 @@
 * Afişaţi la final ambele preturi.
 
 """
+
+price = int(input("insert price >100 : "))
+reducere = price * 30 / 100
+pret_final = price - reducere
+pret_100_lei = price - 100
+
+print(f"Pretul initial este {price}")
+print(f"Pretul cu discont procentual de 30 % este {pret_final}")
+print(f"Pretul cu discont - 100 este  {pret_100_lei}")
