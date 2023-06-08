@@ -15,20 +15,20 @@ Completati campurile din ___ si adaugati codul necesar.
 Note: Utilizati indiciele numelui pentru a afla nota dupa indice din `list_of_marks`.
 """
 
-names = ___
-list_of_names = names.split(__)
+names = input("Introduceti lista de nume, separate prin virgula: ")
+list_of_names = names.split(",")
 
 list_of_marks = []
 
 for name in list_of_names:
-    mark = ___
-    ___
+    mark = int(input(f"Introduceti nota pentru {name}: "))
+    list_of_marks.append(mark)
 
 # Codul pentru a afisa notele
 
 marks_sum = 0
 for mark in list_of_marks:
-    marks_sum += ___
+    marks_sum += mark
 
-print(f"Suma notelor: {marks_sum}")
-print(f"Media notelor: {marks_sum / ___}")
+print(f"Suma notelor este : {marks_sum}")
+print(f"Media notelor este : {marks_sum /  len(list_of_marks)}")
