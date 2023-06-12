@@ -24,3 +24,20 @@ Pentru a calcula Indicele de Masă Corporală (BMI), urmează pașii de mai jos:
 4. Rezultatul obținut va fi indicele de masă corporală al persoanei.
 
 """
+
+greutate = float(input("Introduceti greutatea în kilograme: "))
+inaltime = float(input("Introduceti înălțimea în metri: "))
+
+bmi = greutate / (inaltime ** 2)
+
+if bmi < 18.5:
+    categoria = "Subponderal"
+elif 18.5 <= bmi < 25:
+    categoria = "Greutate normală"
+elif 25 <= bmi < 30:
+    categoria = "Supraponderal"
+else:
+    categoria = "Obezitate"
+
+print("Indicele de Masă Corporală (BMI) este:", bmi)
+print("Categoria:", categoria)
