@@ -29,3 +29,4 @@ list_ori = [10, 20, 30, ...]
 
 Astfel fiecare indice din list_cuvinte va corespunde cu indicele in list_ori, unde cuvant3 e intalnit de 30 ori.
 
+In cazul in care nu lucreaza input, puteti sa facteti textul ca multi-line sting in Python.
