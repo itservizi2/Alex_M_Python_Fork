@@ -1,4 +1,4 @@
-"""Write a program that uses a for loop to calculate the sum of all numbers from 1 to 100.
+"""Write a program_exemplu that uses a for loop to calculate the sum of all numbers from 1 to 100.
    Example output: 5050"""
 
 nr_sum = 0

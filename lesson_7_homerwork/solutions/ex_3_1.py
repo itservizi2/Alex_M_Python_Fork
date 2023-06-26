@@ -1,4 +1,4 @@
-"""Scrieți un program care utilizează o buclă while pentru a genera secvența
+"""Scrieți un program_exemplu care utilizează o buclă while pentru a genera secvența
 Fibonacci până la un număr dat de termeni. Secvența Fibonacci este o serie de numere în
 care fiecare număr este suma celor două numere precedente. Secvența începe cu 0 și 1."""
 

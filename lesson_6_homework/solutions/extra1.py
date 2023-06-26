@@ -1,5 +1,5 @@
 """
-Scrieți un program care solicită utilizatorului să introducă un șir de caractere și numără numărul de caractere din șir
+Scrieți un program_exemplu care solicită utilizatorului să introducă un șir de caractere și numără numărul de caractere din șir
 (excluzând spațiile).
 """
 

@@ -1,6 +1,6 @@
 """
 BMI Calculator
-Write a program that takes a person's weight (in kilograms) and height (in meters) as input and calculates their Body Mass Index (BMI). Then classify the BMI into the following categories:
+Write a program_exemplu that takes a person's weight (in kilograms) and height (in meters) as input and calculates their Body Mass Index (BMI). Then classify the BMI into the following categories:
 
 Underweight (BMI < 18.5)
 Normal weight (BMI between 18.5 and 24.9)
@@ -9,7 +9,7 @@ Obesity (BMI 30 or greater)
 
 
 Calculator BMI
-Scrie un program care primește greutatea unei persoane (în kilograme) și înălțimea (în metri) ca intrare și calculează Indicele de Masă Corporală (BMI). Apoi clasifică BMI-ul în următoarele categorii:
+Scrie un program_exemplu care primește greutatea unei persoane (în kilograme) și înălțimea (în metri) ca intrare și calculează Indicele de Masă Corporală (BMI). Apoi clasifică BMI-ul în următoarele categorii:
 
 Subponderal (BMI < 18,5)
 Greutate normală (BMI între 18,5 și 24,9)

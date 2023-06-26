@@ -1,4 +1,4 @@
-# Scrie un program care preia numărul de secunde ca intrare și îl convertește în ore, minute și secunde.
+# Scrie un program_exemplu care preia numărul de secunde ca intrare și îl convertește în ore, minute și secunde.
 # Afișează timpul convertit.
 
 seconds = int(input(" Please input seconds value:"))

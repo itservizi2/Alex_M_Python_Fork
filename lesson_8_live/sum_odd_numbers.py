@@ -1,5 +1,5 @@
 """
-Write a program that calculates the sum of all odd numbers between 1 and 50 using a list comprehension
+Write a program_exemplu that calculates the sum of all odd numbers between 1 and 50 using a list comprehension
 """
 
 print(
@@ -9,7 +9,7 @@ print(
 )
 
 """
-Write a program that asks the user to enter a sentence and counts the number of vowels in it using a for loop.
+Write a program_exemplu that asks the user to enter a sentence and counts the number of vowels in it using a for loop.
 """
 
 list_of_vowels = [char for char in input('Cuvant') if char.lower() in 'aioue']

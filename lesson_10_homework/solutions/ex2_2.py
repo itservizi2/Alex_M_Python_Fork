@@ -1,5 +1,5 @@
 """
-Creaza un program care va inregistra o lista de oaspeti si comenzile lor la un restaurant.
+Creaza un program_exemplu care va inregistra o lista de oaspeti si comenzile lor la un restaurant.
 
 Utilizatorul va introduce la consola cati oaspeti vor fi inregistrati.
 

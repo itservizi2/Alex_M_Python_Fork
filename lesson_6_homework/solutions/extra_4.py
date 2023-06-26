@@ -1,5 +1,5 @@
 """
-Scrieți un program care solicită utilizatorului să introducă un număr și afișează toate numerele pare
+Scrieți un program_exemplu care solicită utilizatorului să introducă un număr și afișează toate numerele pare
 de la 1 la acel număr.
 """
 

@@ -1,6 +1,6 @@
 """
 Convertor de timp V2
-Scrie un program care preia timpul introdus de utilizator în următorul format:
+Scrie un program_exemplu care preia timpul introdus de utilizator în următorul format:
 "11:20 PM" sau "02:00 AM".
 Și îl convertește în formatul de 24 de ore.
 "23:20" sau "02:00"

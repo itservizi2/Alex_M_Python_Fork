@@ -1,6 +1,6 @@
 """
 Exercise 1: Grading System
-Write a program that takes a student's score as input and prints their corresponding grade based on the following conditions:
+Write a program_exemplu that takes a student's score as input and prints their corresponding grade based on the following conditions:
 - Score >= 90: Grade A
 - Score >= 80: Grade B
 - Score >= 70: Grade C

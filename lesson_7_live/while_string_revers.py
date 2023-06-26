@@ -1,5 +1,5 @@
 """
-Write a program that uses a while loop to reverse a given string.
+Write a program_exemplu that uses a while loop to reverse a given string.
     Example input: "Python"
     Example output: "nohtyP"
 """

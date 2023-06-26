@@ -1,5 +1,5 @@
 """
-Write a program that generates a random number between 1 and 100.
+Write a program_exemplu that generates a random number between 1 and 100.
  Allow the user to make guesses
  and provide feedback (higher, lower, or correct)
   given they have 10 attempts."""

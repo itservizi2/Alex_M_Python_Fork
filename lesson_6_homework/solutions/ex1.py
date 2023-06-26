@@ -1,6 +1,6 @@
 """
 Calculator BMI
-Scrie un program care primește greutatea unei persoane (în kilograme) și înălțimea (în metri) ca intrare
+Scrie un program_exemplu care primește greutatea unei persoane (în kilograme) și înălțimea (în metri) ca intrare
 și calculează Indicele de Masă Corporală (BMI). Apoi clasifică BMI-ul în următoarele categorii:
 Subponderal (BMI < 18,5)
 Greutate normală (BMI între 18,5 și 24,9)

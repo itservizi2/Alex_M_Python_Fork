@@ -1,6 +1,6 @@
 """
 Numărarea caracterelor
-Scrieți un program care
+Scrieți un program_exemplu care
  primește un șir de caractere ca intrare
  și numără de câte ori apare un caracter specific (introdus in consola).
 

@@ -1,4 +1,4 @@
-# Ex 4. Corecteaza erorile in urmatorul program.
+# Ex 4. Corecteaza erorile in urmatorul program_exemplu.
 
 a = 12
 b = 24

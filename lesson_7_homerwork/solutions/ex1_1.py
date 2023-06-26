@@ -1,4 +1,4 @@
-"""Scrieți un program care utilizează o buclă while pentru a calcula
+"""Scrieți un program_exemplu care utilizează o buclă while pentru a calcula
 factorialul unui număr întreg pozitiv dat n.
 Factorialul unui număr este produsul tuturor numerelor întregi pozitive de la 1 la n.
 """

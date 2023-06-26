@@ -1,4 +1,4 @@
-# Creaza un program care va cere de la utilizator:
+# Creaza un program_exemplu care va cere de la utilizator:
 #
 # Adresa de email
 # Numele de utilizator

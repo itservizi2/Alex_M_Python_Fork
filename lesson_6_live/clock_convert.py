@@ -1,5 +1,5 @@
 """
-Write a program that takes a time in 24-hour format as input (e.g., 13:45)
+Write a program_exemplu that takes a time in 24-hour format as input (e.g., 13:45)
 and converts it to 12-hour format (e.g., 1:45 PM).
 
 """

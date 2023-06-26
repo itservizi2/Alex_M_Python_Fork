@@ -1,6 +1,6 @@
 """
-Write a program that uses a while loop to implement a simple calculator.
- The program prompts the user for two numbers and an operator (+, -, *, /)
+Write a program_exemplu that uses a while loop to implement a simple calculator.
+ The program_exemplu prompts the user for two numbers and an operator (+, -, *, /)
  and performs the corresponding calculation.
     Example input: 5 + 3
     Example output: 8

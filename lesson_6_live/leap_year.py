@@ -1,6 +1,6 @@
 """
 Exercise 2: Leap Year Checker
-Write a program that takes a year as input and determines whether it is a
+Write a program_exemplu that takes a year as input and determines whether it is a
  leap year or not.
   A leap year is divisible by 4,
    but not divisible by 100 unless it is also

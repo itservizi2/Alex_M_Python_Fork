@@ -1,5 +1,5 @@
 """
-Scrieți un program care solicită utilizatorului să introducă trei numere și afișează cel mai mare număr dintre ele.
+Scrieți un program_exemplu care solicită utilizatorului să introducă trei numere și afișează cel mai mare număr dintre ele.
 """
 
 nr1 = float(input("Introduceti numarul 1: "))

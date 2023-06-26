@@ -1,5 +1,5 @@
 """
-Scrieți un program care solicită utilizatorului să introducă un șir de caractere și verifică dacă acesta
+Scrieți un program_exemplu care solicită utilizatorului să introducă un șir de caractere și verifică dacă acesta
 este un palindrom (adică se citește la fel de la stânga la dreapta și de la dreapta la stânga).
 """
 

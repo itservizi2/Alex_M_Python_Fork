@@ -1,5 +1,5 @@
 """
-Write a program that uses a while loop to simulate a dice rolling game.
+Write a program_exemplu that uses a while loop to simulate a dice rolling game.
 The game continues until the user rolls a 6.
 Example output: Rolled a 4/3/2/1/5. Continue? (y/n)
 """
