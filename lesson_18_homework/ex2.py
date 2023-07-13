@@ -1,18 +1,38 @@
-def calculate_sum():
-    def validate_input(value):
+import numbers
+
+
+def validate_numeric(func):
+    def wrapper(*args, **kwargs):
         try:
-            return float(value)
+            result = func(*args, **kwargs)
         except ValueError:
-            raise ValueError("Result is not numeric")
+            print("Error: Result is not numeric")
 
-    num1 = validate_input(input("Enter the first number: "))
-    num2 = validate_input(input("Enter the second number: "))
-    num3 = validate_input(input("Enter the third number: "))
-    return num1 + num2 + num3
+        else:
+            if isinstance(result, numbers.Number):
+                print("The inserted character is a number")
+                return result
+            else:
+                print("Error: Result is not numeric")
 
-try:
-    result = calculate_sum()
-    print("Sum:", result)
-except ValueError as e:
-    print("Error:", str(e))
+    return wrapper
 
+
+@validate_numeric
+def get_input():
+    return float(input('Enter a number: '))
+
+
+print('Testing the decorator...')
+
+get_input()
+
+print("Continuing...")
+
+get_input()
+
+print("Continuing...")
+
+get_input()
+
+print("Done!")
