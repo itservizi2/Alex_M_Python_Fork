@@ -11,7 +11,7 @@ from collections import namedtuple
 from datetime import datetime
 
 from lesson_19_live.constants import DATE_TIME_FORMAT
-from lesson_19_live.data import get_all_tasks_from_json, save_tasks_to_json
+from lesson_19_live.data import get_tasks_from_json, save_tasks_to_json
 from lesson_19_live.utils import safe_index_get
 
 Task = namedtuple('Task', [
@@ -67,7 +67,7 @@ def add_task(path, task_title=None):
     # Folosim titlul din argumente
     title = task_title or input('Title for task: ')
     # Extragem lista de taskuri din JSON pentru a o actualiza
-    tasks_list = get_all_tasks_from_json(path)
+    tasks_list = get_tasks_from_json(path)
     # Cream un task nou
     new_task = Task(
         id=len(tasks_list),
@@ -93,7 +93,7 @@ def get_tasks(path, show_completed=False, deleted=False) -> list:
     :param deleted: daca aratam doar taskurile sterse
     :return:
     """
-    tasks_list = [task_from_dict(task) for task in get_all_tasks_from_json(path)]
+    tasks_list = [task_from_dict(task) for task in get_tasks_from_json(path)]
     task_filtered = list(filter(
         lambda el: el.deleted == deleted and bool(el.completed_at) == show_completed,
         tasks_list
@@ -163,7 +163,7 @@ def mark_tasks_as_completed(path, task_index=None):
     # Afisam un mesaj pentru utilizator
     print(f'Marking task {task_to_complete.title} complete')
     # Extragem din fisier toate taskurile si le transformam sa fie Task (si nu dict)
-    all_task = [task_from_dict(a) for a in get_all_tasks_from_json(path)]
+    all_task = [task_from_dict(a) for a in get_tasks_from_json(path)]
     # Gasim din lista de toate taskurile, elementul dupa id-ul taskului pe care il finisam
     task_to_change = find_task_by_id(all_task, task_to_complete.id)
     task_index_in_all = all_task.index(task_to_change)
@@ -180,6 +180,45 @@ def mark_tasks_as_completed(path, task_index=None):
     all_task = [task_to_dict(a) for a in all_task]
     # Stocam in fisier
     save_tasks_to_json(all_task, path)
+
+
+def delete_task(path, task_index):
+    tasks = get_tasks_from_json(path)
+
+    tasks = [task_from_dict(t) for t in tasks]
+
+    if task_index >= len(tasks):
+        print("Invalid index")
+        return
+
+    task_to_delete = tasks[task_index]
+
+    deleted_task = Task(
+        id=task_to_delete.id,
+        title=task_to_delete.title,
+        created_at=task_to_delete.created_at,
+        completed_at=task_to_delete.completed_at,
+        deleted=True
+    )
+
+    tasks[task_index] = deleted_task
+
+    tasks_to_save = [task_to_dict(t) for t in tasks]
+
+    save_tasks_to_json(tasks_to_save, path)
+
+    print(f"Deleted task: {deleted_task.title}")
+
+
+def view_deleted_tasks(path):
+    """Prints out deleted tasks"""
+
+    deleted_tasks = get_tasks(path, deleted=True)
+
+    print("Deleted tasks:")
+
+    for task in deleted_tasks:
+        print(f"- {task.title}")
 
 
 if __name__ == '__main__':

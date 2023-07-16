@@ -1,12 +1,13 @@
 import json
 
 
-def get_all_tasks_from_json(path):
+def get_tasks_from_json(path):
     """
     Extrage din fisier o lista de taskrui ca dictionare
     :param path:
     :return:
     """
+
     try:
         with open(path, 'r') as file:
             return json.load(file)

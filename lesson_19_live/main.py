@@ -1,4 +1,4 @@
-from lesson_19_live.tasks import add_task, list_tasks, mark_tasks_as_completed
+from lesson_19_live.tasks import add_task, list_tasks, mark_tasks_as_completed, delete_task, view_deleted_tasks
 
 
 def invalid_input(*args, **kwargs):
@@ -15,6 +15,8 @@ def main_menu(path):
     2. List all uncompleted tasks
     3. List completed tasks
     4. Mark task as complete
+    5. Delete_task
+    6. View_deleted_tasks
     0. To end program
             """
         )
@@ -29,6 +31,11 @@ def main_menu(path):
                 list_tasks(path, True)
             case "4":
                 mark_tasks_as_completed(path)
+            case "5":
+                task_index = int(input("Enter task index to delete: "))
+                delete_task(path, task_index)
+            case "6":
+                view_deleted_tasks(path)
             case "0":
                 break
             case _:
@@ -39,5 +46,7 @@ def main_menu(path):
 
 if __name__ == '__main__':
     # Rulam Programul
-    path = input('Path to file:')
+    path = input('Path to file: ')
     main_menu(path)
+
+# dontmatter.json
