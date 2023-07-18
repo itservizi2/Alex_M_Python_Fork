@@ -26,7 +26,6 @@ print(list1, list2)
 # pentru a crea o copie, cream o lista noua
 
 list1 = ['Hello']
-# list2 are o referinta la list1
 list2 = list(list1)
 list1.append('World')
 print(list1, list2)
