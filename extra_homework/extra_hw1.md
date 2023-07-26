@@ -1,3 +1,9 @@
+# Notite:
+
+Private inseamna cu _underscore
+
+Exemplu: `_account_number` - (astfel nu permitem sa accesam direct fieldul)
+
 ## Banking System (OOP) in Python:
 
 1. Create a class called `BankAccount`.
