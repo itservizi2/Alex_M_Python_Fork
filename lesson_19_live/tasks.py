@@ -118,7 +118,7 @@ def list_tasks(path, show_completed=False):
         return
     for index, task in enumerate(task_filtered):
         # Afisam atit taskul, cat si indicele lui
-        task_str = f"[{task.title}] created at: [{task.created_at.strftime(DATE_TIME_FORMAT)}]"
+        task_str = f"[{task._title}] created at: [{task.created_at.strftime(DATE_TIME_FORMAT)}]"
         print_args = [index, task_str]
         if show_completed:
             # In caz ca taskul e completat, adaugam si timpul pentru completare
@@ -170,7 +170,7 @@ def mark_tasks_as_completed(path, task_index=None):
     # avand indexul taskului in lista din fisier, putem re-scrie taskul cu informatie noua
     all_task[task_index_in_all] = Task(
         id=task_to_change.id,
-        title=task_to_change.title,
+        title=task_to_change._title,
         created_at=task_to_change.created_at,
         # Pastram toata informatia cu exceptia la completed_at
         completed_at=datetime.now(),
