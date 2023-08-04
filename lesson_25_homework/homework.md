@@ -1,3 +1,19 @@
+# Homework general
+
+Use a library that is new to you, or that you would like to try out to make a small program, where you showcase the
+library and what it can do. It would be appreciated it your solution is more than just a "demo" example from the library
+documentations.
+
+In case you have no other ideas, you can use the homework below.
+
+## RO
+
+Folosește o bibliotecă cu care nu ai mai lucrat până acum sau pe care ai vrea să o încerci pentru a crea un mic program,
+în care să demonstrezi funcționalitățile bibliotecii și ceea ce poate să facă. Ar fi apreciat ca soluția ta să fie mai
+mult decât un simplu exemplu "demo" din documentația bibliotecii.
+
+În cazul în care nu ai alte idei, poți folosi temele de casă de mai jos.
+
 # Homework
 
 This homework is intended to have you invesitage ways to work with a library most of you are not familiar with.
