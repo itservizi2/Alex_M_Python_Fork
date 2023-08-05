@@ -6,9 +6,7 @@ data_mdl_new = requests.get("https://www.floatrates.com/daily/mdl.json")
 data_mdl_new = data_mdl_new.json()
 
 dataframe_new = pd.DataFrame(data_mdl_new).transpose()
-dataframe_old = pd.read_json(
-    "C:\\Users\\mariu\\PycharmProjects\\tekwillLiveV3\\lesson_23_homework\\conversion_rates.json"
-).transpose()
+dataframe_old = pd.read_json("conversion_rates.json").transpose()
 
 difference = dataframe_old['inverseRate'] - dataframe_new['inverseRate']
 
@@ -23,6 +21,7 @@ f, ax = plt.subplots(1, 1, figsize=(5, 5))
 g = sns.barplot(x=dataframe_new['code'], y=dataframe_new['diffrence'])
 t = g.set(title="Value counts of Pandas Series")
 
-plt.savefig()
+plt.savefig("figure.png", format="png", dpi=300)
+# plt.show()
 
 print(difference)
