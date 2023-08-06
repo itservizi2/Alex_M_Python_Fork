@@ -16,7 +16,7 @@ mult decât un simplu exemplu "demo" din documentația bibliotecii.
 
 # Homework
 
-This homework is intended to have you invesitage ways to work with a library most of you are not familiar with.
+This homework is intended to have you investigate ways to work with a library most of you are not familiar with.
 
 The library you need to install is `pandas`, also install `openpyxl`.
 
