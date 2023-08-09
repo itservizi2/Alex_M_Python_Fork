@@ -20,7 +20,7 @@ def get_translated_text(text_to_translate, to_language='ro'):
 
 if __name__ == '__main__':
     while True:
-        inpt = input('Text to translate to romanian')
+        inpt = input('Text to translate to romanian :')
         if inpt == 'END':
             break
         print(get_translated_text(inpt))
