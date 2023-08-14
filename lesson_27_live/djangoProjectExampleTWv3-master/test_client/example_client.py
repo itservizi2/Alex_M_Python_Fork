@@ -4,6 +4,7 @@ url = 'http://127.0.0.1:8000/'
 
 list_url = url + 'todo/list/'
 add_url = url + 'todo/add/'
+complete_url = url + 'todo/complete/'
 
 
 def task_client():
@@ -23,6 +24,15 @@ def task_client():
         print("Status", response.status_code)
         print("Content", response.content)
 
+    add = input('complete? y/n')
+    if add == 'y':
+        id = input('id')
+        # Trimitem requiest la API pentru a crea
+        response = requests.post(complete_url, data={
+            'id': int(id)
+        })
+        print("Status", response.status_code)
+        print("Content", response.content)
 
 while True:
     task_client()

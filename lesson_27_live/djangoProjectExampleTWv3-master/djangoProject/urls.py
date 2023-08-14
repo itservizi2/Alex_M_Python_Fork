@@ -21,4 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('todo/', include("todo.urls")),
     path('weather/', include("weather.urls")),
+    path('facebook/', include("facebook_v22.urls")),
+    path('timpul/', include("timpul.urls")),
 ]

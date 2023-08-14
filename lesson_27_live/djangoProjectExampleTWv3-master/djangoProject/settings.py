@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure--e0_51z8y^c^ff)jw5b3ztdr9cgdvsp^g*=sn8y#71jbk)-i8y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 # Application definition
 
@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'todo',
     'weather',
+    'facebook_v22',
+    'timpul'
 ]
 
 MIDDLEWARE = [

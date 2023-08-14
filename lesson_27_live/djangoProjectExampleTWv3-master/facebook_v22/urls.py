@@ -14,13 +14,17 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
 from django.urls import path
 
-from todo.views import get_todo_list, add_task_to_list_view, complete_task
+from facebook_v22.views import register_user, all_users_view, users_restered_today, regisration_one_day_sooner, \
+    rename_user, make_post, list_posts
 
 urlpatterns = [
-    path('list/', get_todo_list),
-    path('add/', add_task_to_list_view),
-    path('complete/', complete_task),
+    path('register/', register_user),
+    path('list/', all_users_view),
+    path('list/today/', users_restered_today),
+    path('change-date/lower/', regisration_one_day_sooner),
+    path('rename-user/', rename_user),
+    path('post/', make_post),
+    path('list-posts/', list_posts),
 ]
