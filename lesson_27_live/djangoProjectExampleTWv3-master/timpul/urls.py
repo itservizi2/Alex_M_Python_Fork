@@ -17,11 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from timpul.views import get_timpul
+from timpul.views import get_weather
 from todo.views import get_todo_list, add_task_to_list_view, complete_task
 
 urlpatterns = [
-    path('get/<city_name>', get_timpul),
-    # path('add/', add_task_to_list_view),
-    # path('complete/', complete_task),
+    path('get/<city>', get_weather)
+
 ]
